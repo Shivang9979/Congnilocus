@@ -1,0 +1,41 @@
+Q_id,Question,primaryfacts,otherfacts
+Q_1_s_r,I treat everyone with kindness and sympathy.,sea,ric
+Q_2_c_r,I am always prepared.,cei,rsa
+Q_3_a_s,I don't talk a lot.,aci,ser
+Q_4_c_e,I am often troubled by negative thoughts.,crs,eai
+Q_5_a_e,I believe in the importance of art.,acr,esi
+Q_6_s_c,I have a kind word for everyone.,ser,cai
+Q_7_c_e,I make plans and stick to them.,cri,esa
+Q_8_c_e,I stay in the background.,cri,esa
+Q_9_r_e,I often feel blue.,rci,esa
+Q_10_a_e,I have a vivid imagination.,air,ecs
+Q_11_i_e,I criticize other people.,irs,eac
+Q_12_c_s,I get chores done right away.,cre,sai
+Q_13_s_c,I am the life of the party.,sae,cri
+Q_14_c_e,I often worry that I am not good enough.,cri,esa
+Q_15_a_s,I am not interested in abstract ideas.,air,sec
+Q_16_s_c,I stop what I am doing to help other people.,sae,cri
+Q_17_e_s,I always make good use of my time.ecr,sai,
+Q_18_s_c,I am skilled in handling social situations.,sei,cra
+Q_19_c_e,I often feel anxious about what could go wrong.,cri,esa
+Q_20_i_e,I am interested in the meaning of things.,irc,esa
+Q_21_a_e,I am Original,arc,esi
+Q_22_c_e,I am Systematic,cri,esa
+Q_23_a_s,I am Shy,air,sec
+Q_24_e_c,I am Soft-Hearted,esa,cri
+Q_25_a_e,I am Tense,aic,esr
+Q_26_i_c,I am Inquisitive,ire,csa
+Q_27_a_e,I am Forgetful,asi,ecr
+Q_28_c_e,I am Reserved,cri,esa
+Q_29_e_c,I am Agreeable,esa,cri
+Q_30_s_e,I am Nervous,sra,eci
+Q_31_a_e,I am Creative,asi,ecr
+Q_32_c_s,I am Self-Disciplined,cer,sai
+Q_33_s_e,I am Outgoing,sai,ecr
+Q_34_s_c,I am Charitable,sre,cia
+Q_35_c_i,I am Moody,cre,isa
+Q_36_a_s,I am Imaginative,air,sec
+Q_37_c_e,I am Organized,cri,esa
+Q_38_s_c,I am Talkative,sea,cri
+Q_39_s_c,I am Humble,sea,cri
+Q_40_c_e,I am Pessimistic,cri,esa

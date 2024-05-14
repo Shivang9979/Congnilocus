@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source Sans Pro"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'styles/quizstyle.css' %}" />
+  </head>
+  <body>
+    <nav>
+      <img src="{% static 'images/Logo.png' %}" alt="Learning Image" />
+      <div class="logo">
+        <a href="{% url 'index' %}" style="color: black; text-decoration: none"
+          >CogniLocus Quiz</a
+        >
+      </div>
+      <ul>
+        <li style="margin-left: 10rem">
+          <a href="{% url 'aboutus' %}">AboutUs</a>
+        </li>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'index' %}">Leave Quiz</a></li>
+      </ul>
+    </nav>
+    <div style="margin-top: 0.1rem">
+      <form method="POST" action="{% url 'user_input' %}">
+        {% csrf_token %}
+        <ul>
+          {% for factor, questions in random_questions.items %}
+          <ul>
+            {% for question in questions %}
+            <!-- <li>
+              {{ question.Question }}
+              <input
+                type="number"
+                name="question_rating_{{ question.Q_id }}"
+                min="1"
+                max="5"
+              />
+            </li> -->
+            <li style="list-style-type: none">
+              <div
+                class="box"
+                style="
+                  height: 4rem;
+                  background-color: black;
+                  opacity: 1;
+                  margin-left: 0.05em;
+                  margin-right: 4.5em;
+                "
+              >
+                <p
+                  style="
+                    color: white;
+                    margin-top: 0.001rem;
+                    text-align: center;
+                    font-size: 25px;
+                    height: 2vh;
+                    padding: 0;
+                  "
+                >
+                  {{ question.Question }}
+                </p>
+                <div
+                  required="required"
+                  id="select1"
+                  class="form-radios"
+                  style="display: flex; margin-top: 0.01rem; margin-left: 27rem"
+                >
+                  <div class="form-item form-item-submitted">
+                    <label for="edit-submitted-r-1-1" class="control-label">
+                      <span
+                        class="label-text"
+                        style="color: white; text-align: center"
+                        >Dislike</span
+                      >
+                      <input
+                        type="radio"
+                        required="required"
+                        id="edit-submitted"
+                        name="question_rating_{{ question.Q_id }}"
+                        value="1"
+                      />
+
+                      <span class="fancy-input"></span>
+                    </label>
+                  </div>
+                  <div class="form-item form-item-submitted">
+                    <label for="edit-submitted-r-1-1" class="control-label">
+                      <input
+                        type="radio"
+                        required="required"
+                        id="edit-submitted1"
+                        name="question_rating_{{ question.Q_id }}"
+                        value="2"
+                      />
+                      <span class="fancy-input"></span>
+                      <span class="label-text"></span>
+                    </label>
+                  </div>
+                  <div class="form-item form-item-submitted">
+                    <label for="edit-submitted-r-1-1" class="control-label">
+                      <input
+                        type="radio"
+                        required="required"
+                        id="edit-submitted2"
+                        name="question_rating_{{ question.Q_id }}"
+                        value="3"
+                      />
+                      <span class="fancy-input"></span>
+                      <span class="label-text"></span>
+                    </label>
+                  </div>
+                  <div class="form-item form-item-submitted">
+                    <label for="edit-submitted-r-1-1" class="control-label">
+                      <input
+                        type="radio"
+                        required="required"
+                        id="edit-submitted3"
+                        name="question_rating_{{ question.Q_id }}"
+                        value="4"
+                      />
+                      <span class="fancy-input"></span>
+                      <span class="label-text"></span>
+                    </label>
+                  </div>
+                  <div class="form-item form-item-submitted">
+                    <label for="edit-submitted-r-1-1" class="control-label">
+                      <input
+                        type="radio"
+                        required="required"
+                        id="edit-submitted4"
+                        name="question_rating_{{ question.Q_id }}"
+                        value="5"
+                      />
+                      <span class="fancy-input"></span>
+                      <span class="label-text" style="color: white">like</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endfor %}
+        </ul>
+        <div class="button">
+          <input
+            type="submit"
+            value="Submit"
+            id="submitBtn"
+            style="
+              border-radius: 1.7rem;
+              width: 10rem;
+              padding: 10px;
+              font-size: 16px;
+              cursor: pointer;
+              position: relative;
+              background-color: black;
+              color: white;
+              margin-top: 20px;
+              margin-left: 2em;
+            "
+          />
+        </div>
+        <br />
+        <br />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>

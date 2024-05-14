@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% load static %} {% block content %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Our Team Section | CodingLab</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source Sans Pro"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles/aboutus.css' %}" />
+  </head>
+
+  <body>
+    <nav style="height: 100px">
+      <img src="{% static 'images/Logo.png' %}" alt="Learning Image" />
+      <div class="logo">
+        <a href="{% url 'index' %}" style="color: black; text-decoration: none"
+          >CogniLocus</a
+        >
+      </div>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+      </ul>
+    </nav>
+
+    <div class="container" style="margin-left: 150px">
+      <input type="radio" name="dot" id="one" />
+      <input type="radio" name="dot" id="two" />
+      <div class="main-card">
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="{% static 'images/akshar.jpg' %}" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Akshar Thakor</div>
+                <div class="job">21BCP172</div>
+              </div>
+              <div class="media-icons">
+                <a
+                  href="https://www.linkedin.com/in/akshar-thakor-1528a725b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/AksharThakor" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCIilwVoK3Jk2cvLA4T33vMw"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="{% static 'images/Ankit.jpg' %}" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Ankitkumar Prajapati</div>
+                <div class="job">21BCP153</div>
+              </div>
+              <div class="media-icons">
+                <a
+                  href="https://www.linkedin.com/in/ankitkumar-prajapati-167b58230/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/Ankitkumarprajapati2003"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCH4lIqjd3nRZK340M1c6SQA"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="{% static 'images/Ayush.jpg' %}" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Ayush Panchal</div>
+                <div class="job">21BCP174</div>
+              </div>
+              <div class="media-icons">
+                <a
+                  href="https://www.linkedin.com/in/ayush-panchal-873339273/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/Ayush3014" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UChnb8_QyYdb6nK0axgzMJlg"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card" style="margin-left: 150px">
+            <div class="content">
+              <div class="img">
+                <img src="{% static 'images/shivang.jpg' %}" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Shivang Patel</div>
+                <div class="job">21BCP176</div>
+              </div>
+              <div class="media-icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-right: 150px">
+            <div class="content">
+              <div class="img">
+                <img src="{% static 'images/nishil.jpg' %}" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Nishil Patel</div>
+                <div class="job">21BCP156</div>
+              </div>
+              <div class="media-icons">
+                <a
+                  href="https://www.linkedin.com/in/nishil-patel-a64161266/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/Nishil1705" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCSGUISCn18WkgTfou3bx_2w"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button">
+        <label for="one" class="active one"></label>
+        <label for="two" class="two"></label>
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{% load static %} {% block content %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source Sans Pro" rel="stylesheet" />
+
+  <link rel="stylesheet" href="{% static  'styles/index.css' %}" />
+  <title>CogniLocus</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <nav>
+    <img src="{% static 'images\Logo.png' %}" alt="Learning Image" />
+    <div class="logo">
+      <a href="{% url 'index' %}" style="color: black; text-decoration: none">CogniLocus</a>
+    </div>
+    <ul>
+      <li style="margin-left: 12rem">
+        <a href="{% url 'aboutus' %}">AboutUs</a>
+      </li>
+      <li><a href="{% url 'index' %}">Home</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section">
+    <div class="image">
+      <img src="{% static 'images\BG_Design_1.png' %}" alt="Learning Image" style="margin-left: 40rem" />
+    </div>
+  </section>
+
+  <div class="container" id="login-link" style="margin-left: 5rem">
+    <input type="checkbox" id="check" />
+
+    <div class="login form">
+      <header>Login</header>
+      <form method="POST">
+        {% csrf_token %}
+        {% if messages %}
+        <div>
+          {% for message in messages %}
+          <p style="color: red;"><small>{{ message }}</small></p>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <input type="text" name="email" placeholder="Enter your email" />
+        <input type="password"  name="password" placeholder="Enter your password" />
+        <!-- <a href="#" style="margin-left: 20px">Forgot password?</a> -->
+        <input type="submit" name="Login" class="button" value="Login" />
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+          <label for="check">Signup</label>
+        </span>
+      </div>
+    </div>
+
+    <div class="registration form" style="padding-top: 0px">
+      <header>Signup</header>
+      <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Enter your Username" />
+        <input type="text"  name="email" placeholder="Enter your email" />
+        <input type="password" name="password" placeholder="Create a password" />
+        <input type="password" name="confirmPassword" placeholder="Confirm a password" />
+
+        <div class="dobgeninfo" style="display: flex">
+          <input type="Date" name="birthdate" placeholder="enter birthdate" />
+          <select name="gender" value="Gender">
+            <option value="" disabled selected>Gender</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <input type="submit" class="button" value="Signup" />
+      </form>
+
+      <div class="signup">
+        <span class="signup">Already have an account?
+          <label for="check">Login</label>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <footer style="display: flex">
+    <div class="info">
+      <img src="{% static 'images/inverted_logo.png' %}" alt="Learning Image" style="
+            width: 17vw;
+            height: 31vh;
+            margin-top: 0.1rem;
+            margin-left: 5rem;
+          " />
+      <h1 style="font-size: 5rem; color: white">CogniLocus</h1>
+      <br />
+      <div class="footerinfologo" style="margin-left: 0.5rem; font-size: 1.5rem">
+        <p>Have a what if?</p>
+        <p>Take a CogniLocus quiz and get</p>
+        <p>ease of mind.</p>
+      </div>
+    </div>
+
+    <div class="anotherinfo">
+      <h2 style="margin-left: 15rem; margin-top: 10rem">Contact us</h2>
+      <br />
+      <br />
+      <a href="#feedback" style="margin-left: 15rem; margin-top: 1rem">Provide Feedback</a><br />
+    </div>
+  </footer>
+
+  <!-- <script src="{% static 'javascript/script.js' %}"></script> -->
+</body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'styles/result.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source Sans Pro"
+      rel="stylesheet"
+    />
+    <title>Job Recommendations</title>
+  </head>
+  <body>
+    <nav>
+      <img src="{% static 'images/Logo.png' %}" alt="Learning Image" />
+      <div class="logo">
+        <a href="{% url 'index' %}" style="color: black; text-decoration: none"
+          >CogniLocus</a
+        >
+      </div>
+      <ul>
+        <li style="margin-left: 23rem">
+          <a href="{% url 'get_questions' %}">Retake Quiz</a>
+        </li>
+        <li><a href="{% url 'index' %}">Home</a></li>
+      </ul>
+    </nav>
+    <p
+      style="
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        width: 30rem;
+        margin-left: 25rem;
+        height: 3rem;
+        margin-top: 0.5em;
+      "
+    >
+      <b>JOB RECOMMENDATIONS</b>
+    </p>
+    <ul
+      style="
+        width: 30rem;
+        margin-left: 23rem;
+        font-size: 3em;
+        background-color: white;
+        color: black;
+        border: 10px solid black;
+        border-radius: 4rem;
+        list-style: none;
+      "
+    >
+      {% for job in suggestion %}
+      <li style="text-align: center">{{ job }}</li>
+      {% endfor %}
+    </ul>
+    <a href="{% url 'index' %}">Go to Home</a>
+    <a href="{% url 'get_questions' %}">Retake the Quiz</a>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+body,
+h1,
+h2,
+p {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+}
+
+nav {
+  background-color: white;
+  color: black;
+  padding: 0.3rem;
+  display: flex;
+  height: 10rem;
+  width: auto;
+}
+
+nav img {
+  width: 10vw;
+  height: 18vh;
+  padding: 0.1rem;
+}
+
+nav div {
+  font-size: 3.5rem;
+  font-style: solid;
+  font-family: 'Source Sans Pro';
+  margin-top: 0.9rem;
+  padding: 0.2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0rem;
+  display: flex;
+  color: black;
+  font-family: 'Source Sans Pro';
+  margin-left: 20rem;
+  font-style: solid;
+}
+
+nav li {
+  margin-right: 2rem;
+  color: black;
+  margin-top: 1rem;
+}
+
+nav ul li a {
+  font-family: 'Source Sans Pro';
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 2rem;
+  height: 28rem;
+}
+
+.section .content {
+  width: 49vw;
+  height: 40vh;
+  margin-top: -12rem;
+  margin-left: 3rem;
+}
+
+section div h1 {
+  font-size: 2.4rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.8rem 3rem;
+  text-decoration: none;
+  border-radius: 4rem;
+  margin-top: 1rem;
+}
+
+.section .image {
+  flex: 1;
+  text-align: center;
+  margin-top: -10rem;
+  padding: auto;
+}
+
+.section img {
+  height: 65vh;
+  width: 45vw;
+  padding: auto;
+}
+
+/* login and sign up design................... */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro';
+}
+
+.container {
+  position: absolute;
+  top: 21rem;
+  left: 14.2rem;
+  transform: translate(-50%, -50%);
+  max-width: 30vw;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 150rem rgba(0, 0, 0, 0.3);
+}
+
+.container .registration {
+  display: none;
+}
+
+.container .registration header {
+  margin-top: 1rem;
+}
+#check:checked ~ .registration {
+  display: block;
+}
+#check:checked ~ .login {
+  display: none;
+}
+#check {
+  display: none;
+}
+.container .form {
+  padding: 2rem;
+}
+.form header {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  height: 7vh;
+  width: 23vw;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 4rem;
+  outline: none;
+  margin-left: 0.8rem;
+  color: black;
+}
+
+.form select {
+  height: 7vh;
+  width: 28vw;
+  padding: 0 0.6rem;
+  font-size: 0.9rem;
+  margin-bottom: 1.3rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 4rem;
+  outline: none;
+  margin-left: 0.1rem;
+}
+
+.form input::placeholder {
+  color: black;
+}
+
+.form a {
+  font-size: 0.9rem;
+  color: black;
+  text-decoration: none;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+.form input.button {
+  color: #fff;
+  background: black;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover {
+  background: black;
+}
+.signup {
+  font-size: 0.9rem;
+  text-align: center;
+}
+.signup label {
+  color: red;
+  cursor: pointer;
+}
+.signup label:hover {
+  text-decoration: underline;
+}
+
+/* footer.................................................................... */
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 1rem 0;
+
+  height: 77vh;
+}
+
+footer a {
+  color: #fff;
+
+  text-decoration: none;
+}
+
+footer div p {
+  opacity: 0.7;
+}
+
+footer .info {
+  margin-left: 3rem;
+}
+
+footer .contact-info {
+  margin-left: 30rem;
+}

@@ -1,0 +1,103 @@
+Q_id,Question,primaryfact,otherfact
+Q_1_r,Inspect a roof for leaks,r,cesai
+Q_2_r,Use precision machines to build custom metal parts,r,cesai
+Q_3_i,Analyze the structure of molecules,i,rcesa
+Q_4_i,Do scientific experiments,i,rcesa
+Q_5_a,Design a magazine cover,a,secri
+Q_6_a,Paint a portrait,a,secri
+Q_7_s,Teach social skills to disabled children,s,ecria
+Q_8_s,Teach adults to read,s,ecria
+Q_9_e,Coordinate a business conference,e,crisa
+Q_10_e,Plan a marketing strategy for a new company,e,crisa
+Q_11_c,Track monthly expenses for a company,c,esair
+Q_12_c,Review financial records for accuracy,c,esair
+Q_13_r,Install a hardwood floor,r,cesai
+Q_14_r,Repair an air conditioning system,r,cesai
+Q_15_i,Research the properties of nuclear energy,i,rcesa
+Q_16_i,Research a new medicine,i,rcesa
+Q_17_a,Design a greeting card,a,secri
+Q_18_a,Illustrate a children’s book,a,secri
+Q_19_s,Help a disabled person with their daily routine,s,ecria
+Q_20_s,Tutor a child with a learning disability,s,ecria
+Q_21_e,Negotiate business partnerships,e,crisa
+Q_22_e,Persuade others to my point of view,e,crisa
+Q_23_c,Keep payroll records,c,esair
+Q_24_c,Use spreadsheets to organize financial data,c,esair
+Q_25_r,Install an alarm system in a building,r,cesai
+Q_26_r,Install kitchen cabinets,r,cesai
+Q_27_i,Look at cells through a microscope,i,rcesa
+Q_28_i,Work in a chemistry lab,i,rcesa
+Q_29_a,Write a poem,a,secri
+Q_30_a,Write a script for a television show,a,secri
+Q_31_s,Counsel a person recovering from drug addiction,s,ecria
+Q_32_s,Counsel a person with depression,s,ecria
+Q_33_e,Hire and fire employees,e,crisa
+Q_34_e,Close an important business deal,e,crisa
+Q_35_c,Check tax returns for errors,c,esair
+Q_36_c,Calculate the cost of an insurance claim,c,esair
+Q_37_r,Build a stone wall,r,cesai
+Q_38_r,Operate a bulldozer,r,cesai
+Q_39_i,Analyze soil samples for pollution,i,rcesa
+Q_40_i,Study a fault line to predict earthquakes,i,rcesa
+Q_41_a,Design a billboard advertisement,a,secri
+Q_42_a,Edit a movie,a,secri
+Q_43_s,Plan educational games for preschool children,s,ecria
+Q_44_s,Plan activities for elderly people,s,ecria
+Q_45_e,Lead a team,e,crisa
+Q_46_e,Start a new business,e,crisa
+Q_47_c,Calculate the cost of a construction project,c,esair
+Q_48_c,Help customers fill out loan applications,c,esair
+Q_49_r,Take apart a car engine,r,cesai
+Q_50_i,Do laboratory tests to diagnose diseases,i,rcesa
+Q_51_a,Compose a song,a,secri
+Q_52_s,Help a needy family find appropriate housing,s,ecria
+Q_53_e,Give a speech in front of many people,e,crisa
+Q_54_c,Develop a budget for a city government,c,esair
+Q_55_r,Test the quality of parts before shipment,r,cesai
+Q_56_r,Lay brick or tile,r,cesai
+Q_57_r,Work on an offshore oil-drilling rig,r,cesai
+Q_58_r,Assemble electronic parts,r,cesai
+Q_59_r,Operate a grinding machine in a factory,r,cesai
+Q_60_r,Fix a broken faucet,r,cesai
+Q_61_r,Assemble products in a factory,r,cesai
+Q_62_r,Install flooring in houses,r,cesai
+Q_63_i,Study the structure of the human body,i,rcesa
+Q_64_i,Study animal behavior,i,rcesa
+Q_65_i,Do research on plants or animals,i,rcesa
+Q_66_i,Develop a new medical treatment or procedure,i,rcesa
+Q_67_i,Conduct biological research,i,rcesa
+Q_68_i,Study whales and other types of marine life,i,rcesa
+Q_69_i,Work in a biology lab,i,rcesa
+Q_70_i,Make a map of the bottom of an ocean,i,rcesa
+Q_71_a,Conduct a musical choir,a,secri
+Q_72_a,Direct a play,a,secri
+Q_73_a,Design artwork for magazines,a,secri
+Q_74_a,Write a song,a,secri
+Q_75_a,Write books or plays,a,secri
+Q_76_a,Play a musical instrument,a,secri
+Q_77_a,Perform stunts for a movie or television show,a,secri
+Q_78_a,Design sets for plays,a,secri
+Q_79_s,Give career guidance to people,s,ecria
+Q_80_s,Do volunteer work at a non-profit organization,s,ecria
+Q_81_s,Help people who have problems with drugs or alcohol,s,ecria
+Q_82_s,Teach an individual an exercise routine,s,ecria
+Q_83_s,Help people with family-related problems,s,ecria
+Q_84_s,Supervise the activities of children at a camp,s,ecria
+Q_85_s,Teach children how to read,s,ecria
+Q_86_s,Help elderly people with their daily activities,s,ecria
+Q_87_e,Sell restaurant franchises to individuals,e,crisa
+Q_88_e,Sell merchandise at a department store,e,crisa
+Q_89_e,Manage the operations of a hotel,e,crisa
+Q_90_e,Operate a beauty salon or barber shop,e,crisa
+Q_91_e,Manage a department within a large company,e,crisa
+Q_92_e,Manage a clothing store,e,crisa
+Q_93_e,Sell houses,e,crisa
+Q_94_e,Run a toy store,e,crisa
+Q_95_c,Generate the monthly payroll checks for an office,c,esair
+Q_96_c,Inventory supplies using a hand-held computer,c,esair
+Q_97_c,Use a computer program to generate customer bills,c,esair
+Q_98_c,Maintain employee records,c,esair
+Q_99_c,Compute and record statistical and other numerical data,c,esair
+Q_100_c,Operate a calculator,c,esair
+Q_101_c,Handle customers' bank transactions,c,esair
+Q_102_c,Keep shipping and receiving records,c,esair
